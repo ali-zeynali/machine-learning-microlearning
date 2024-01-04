@@ -4,7 +4,7 @@ Welcome to Micro Learning for Machine Learning! Here, you'll find concise and in
 
 ## **Topic1: General Machine Learning**
 
-##### How does KNN work for low and large values of K?
+#### How does KNN work for low and large values of K?
 The K-Nearest Neighbors (KNN) algorithm is a non-parametric, instance-based learning method used for both classification and regression tasks. The behavior of KNN can vary significantly based on the value of KK, the number of nearest neighbors considered for making predictions.
 For Low Values of KK:
 Smaller values of KK (e.g., K=1, 3, 5) result in more flexible and complex decision boundaries.
