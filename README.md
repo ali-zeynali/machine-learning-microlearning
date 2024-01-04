@@ -49,6 +49,7 @@ By iteratively choosing the feature and value that optimally separates the data,
 ***
 #### Explain the concept of transfer learning in the context of deep neural networks.
 Transfer learning involves leveraging knowledge gained while solving one problem and applying it to a different but related problem. In the context of deep learning, this technique uses pre-trained models that have learned features from large datasets and applies these learned features to new tasks. Instead of training a neural network from scratch, transfer learning allows the reuse of parts of a trained model and fine-tuning on a new dataset, thereby improving training efficiency and often resulting in better performance, especially when labeled data is limited for the new task.
+
 ***
 #### What are the steps of fine tuning the model on transfer learning
 Fine-tuning a model using transfer learning involves several steps:
