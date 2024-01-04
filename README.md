@@ -1,17 +1,9 @@
 # **Machine Learning Micro-Learning**
 Welcome to Micro Learning for Machine Learning! Here, you'll find concise and insightful Q&A-style content focused on various facets of machine learning and deep learning. Dive into bite-sized answers to expand your understanding, explore key concepts, and elevate your knowledge in the dynamic world of AI. Whether you're a beginner or an enthusiast, these quick insights aim to fuel your curiosity and spark learning in the fascinating realm of machine learning. These bite-sized answers, generated with the assistance of AI systems like ChatGPT, aim to swiftly expand your understanding of key concepts. Produced by [Ali Zeynali](https://ali-zeynali.github.io/home/), this platform is designed to spark curiosity and facilitate learning, catering to both beginners and enthusiasts in the captivating domain of machine learning.
 
-# Test 1
-
-## Test 2
-
-### Test 3
-
-#### Test 4
-
-##### Test 5
 
 ## **Topic1: General Machine Learning**
+&nbsp;
 
 #### How does KNN work for low and large values of K?
 The K-Nearest Neighbors (KNN) algorithm is a non-parametric, instance-based learning method used for both classification and regression tasks. The behavior of KNN can vary significantly based on the value of KK, the number of nearest neighbors considered for making predictions.
@@ -93,8 +85,9 @@ Detail: The correct answer is option 3. The bias-variance tradeoff is the balanc
 
 ***
 ***
+&nbsp;
 ## **Topic2: Deep Learning**
-
+&nbsp;
 ***
 #### What is batch normalization?
 Batch Normalization (BatchNorm) is a technique used in neural networks to normalize the inputs of each layer, typically applied before the activation function. It was introduced to address issues related to internal covariate shift and improve the training of deep neural networks.
@@ -182,8 +175,9 @@ Non-Robustness to Extreme Values: Batch normalization is sensitive to outliers a
 
 ***
 ***
+&nbsp;
 ## **Topic3: Generative Models**
-
+&nbsp;
 ***
 #### What is FID score?
 FID (Fréchet Inception Distance) is a metric used to evaluate the quality of generated images in generative models, particularly in Generative Adversarial Networks (GANs). It measures the similarity between real and generated images based on statistics derived from a pre-trained deep neural network.
