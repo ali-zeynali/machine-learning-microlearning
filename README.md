@@ -162,7 +162,7 @@ RMSprop (Root Mean Square Propagation): RMSprop adjusts the learning rates for e
 Adam (Adaptive Moment Estimation): Adam combines ideas from RMSprop and momentum. It maintains both a decaying average of past squared gradients (like RMSprop) and a decaying average of past gradients (like momentum). It adapts the learning rate for each parameter, often providing faster convergence.
 
 ***
-#### What is drawback of batch normalization
+##### What is drawback of batch normalization
 The drawbacks of batch normalization include:
 Batch Size Dependency: Batch normalization's performance can be influenced by batch size. For smaller batch sizes, the batch statistics may not accurately represent the entire dataset, leading to less effective normalization.
 Impact on Training Time: While batch normalization accelerates training convergence by allowing the use of higher learning rates, it might slow down training for some cases due to the additional computations required for normalization.
