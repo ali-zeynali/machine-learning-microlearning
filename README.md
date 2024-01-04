@@ -1,23 +1,26 @@
 # **Machine Learning Micro-Learning**
-Welcome to Micro Learning for Machine Learning! Here, you'll find concise and insightful Q&A-style content focused on various facets of machine learning and deep learning. Dive into bite-sized answers to expand your understanding, explore key concepts, and elevate your knowledge in the dynamic world of AI. Whether you're a beginner or an enthusiast, these quick insights aim to fuel your curiosity and spark learning in the fascinating realm of machine learning. These bite-sized answers, generated with the assistance of AI systems like ChatGPT, aim to swiftly expand your understanding of key concepts. Produced by [Ali Zeynali](https://ali-zeynali.github.io/home/), this platform is designed to spark curiosity and facilitate learning, catering to both beginners and enthusiasts in the captivating domain of machine learning.
+Welcome to Micro Learning for Machine Learning! Here, you'll find concise and insightful Q&A-style content focused on various facets of machine learning and deep learning. Dive into bite-sized answers to expand your understanding, explore key concepts, and elevate your knowledge in the dynamic world of AI. Whether you're a beginner or an enthusiast, these quick insights aim to fuel your curiosity and spark learning in the fascinating realm of machine learning. These bite-sized answers, generated with the assistance of AI systems like ChatGPT, aim to swiftly expand your understanding of key concepts. This platform is designed to spark curiosity and facilitate learning, catering to both beginners and enthusiasts in the captivating domain of machine learning.
 
+***
+***
 &nbsp;
 ## **Topic1: General Machine Learning**
 &nbsp;
 
+***
 #### How does KNN work for low and large values of K?
-The K-Nearest Neighbors (KNN) algorithm is a non-parametric, instance-based learning method used for both classification and regression tasks. The behavior of KNN can vary significantly based on the value of KK, the number of nearest neighbors considered for making predictions.
-For Low Values of KK:
-Smaller values of KK (e.g., K=1, 3, 5) result in more flexible and complex decision boundaries.
-With K=1K=1, the prediction for a new data point is based solely on the class of its closest neighbor, which might lead to overfitting, especially if the dataset contains noisy or outlier data points. This can make the model highly sensitive to individual data points.
+The K-Nearest Neighbors (KNN) algorithm is a non-parametric, instance-based learning method used for both classification and regression tasks. The behavior of KNN can vary significantly based on the value of K, the number of nearest neighbors considered for making predictions.
+For Low Values of K:
+Smaller values of K (e.g., K=1, 3, 5) result in more flexible and complex decision boundaries.
+With K=1, the prediction for a new data point is based solely on the class of its closest neighbor, which might lead to overfitting, especially if the dataset contains noisy or outlier data points. This can make the model highly sensitive to individual data points.
 The model tends to capture local patterns and noise in the data, potentially leading to a less smooth decision boundary.
-Low values of KK could be sensitive to outliers, as they could significantly affect the prediction if they happen to be among the nearest neighbors.
-For Large Values of KK:
-Larger values of KK (e.g., K=50,100,or higherK=50,100,or higher) lead to smoother and less complex decision boundaries.
-With larger KK values, the model considers more neighbors when making predictions, which can result in better generalization and smoother decision boundaries.
+Low values of K could be sensitive to outliers, as they could significantly affect the prediction if they happen to be among the nearest neighbors.
+For Large Values of K:
+Larger values of K (e.g., K=50,100,or higherK=50,100,or higher) lead to smoother and less complex decision boundaries.
+With larger K values, the model considers more neighbors when making predictions, which can result in better generalization and smoother decision boundaries.
 The predictions become more robust and stable to noisy or outlier data points, as they have less impact due to the aggregation of more neighbors.
-However, very large values of KK might lead to oversimplification, causing the model to ignore local patterns and details in the data, potentially resulting in underfitting.
-The choice of KK in KNN is crucial and depends on the dataset characteristics, such as the amount of noise, the complexity of the underlying relationships, and the size of the dataset. Cross-validation or other model validation techniques can help determine an optimal KK value for a specific problem. It's important to strike a balance between model bias and variance by choosing an appropriate KK value to achieve better generalization on unseen data.
+However, very large values of K might lead to oversimplification, causing the model to ignore local patterns and details in the data, potentially resulting in underfitting.
+The choice of K in KNN is crucial and depends on the dataset characteristics, such as the amount of noise, the complexity of the underlying relationships, and the size of the dataset. Cross-validation or other model validation techniques can help determine an optimal K value for a specific problem. It's important to strike a balance between model bias and variance by choosing an appropriate K value to achieve better generalization on unseen data.
 
 ***
 #### What is a drawback of the K-Nearest Neighbors (KNN) algorithm?
@@ -203,9 +206,13 @@ Boltzmann Machines: These are stochastic generative models with symmetric connec
 These models serve different purposes and have their strengths and weaknesses based on the task and data distribution. Would you like more information or another question related to deep learning?
 
 
+***
 
+&nbsp;
 
-## **Contact me:** 
+## **Contact:**
+This page is produced by [Ali Zeynali](https://ali-zeynali.github.io/home/). You can contact me via email below:
+
 "a" + \[my last name \] at umass dot edu 
 
 
