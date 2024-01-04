@@ -45,6 +45,7 @@ This process of selecting the best split is recursively applied to each subgroup
 Build the Tree:
 As the process continues, the tree grows by creating additional nodes and splits based on the selected features and values, forming a hierarchical structure.
 By iteratively choosing the feature and value that optimally separates the data, decision trees learn decision rules that best fit the training data and create a predictive model that can predict the target variable for unseen data based on learned rules at each node of the tree.
+
 ***
 #### Explain the concept of transfer learning in the context of deep neural networks.
 Transfer learning involves leveraging knowledge gained while solving one problem and applying it to a different but related problem. In the context of deep learning, this technique uses pre-trained models that have learned features from large datasets and applies these learned features to new tasks. Instead of training a neural network from scratch, transfer learning allows the reuse of parts of a trained model and fine-tuning on a new dataset, thereby improving training efficiency and often resulting in better performance, especially when labeled data is limited for the new task.
@@ -59,6 +60,7 @@ Train on New Data: Train the model on the new dataset. Initially, focus on fine-
 Optimize Hyperparameters: Adjust hyperparameters such as learning rate, batch size, and regularization techniques based on the new dataset and performance metrics.
 Evaluate and Tune: Evaluate the fine-tuned model on a validation set and fine-tune further as needed. Monitor metrics like accuracy, loss, precision, and recall to ensure the model is learning effectively without overfitting.
 Test: Finally, test the fine-tuned model on a separate test dataset to evaluate its generalization performance.
+
 ***
 #### For neural networks dealing with binary classification tasks, which activation function is commonly preferred for the output layer?
 * A) ReLU (Rectified Linear Unit) 
@@ -67,6 +69,7 @@ Test: Finally, test the fine-tuned model on a separate test dataset to evaluate 
 * D) Softmax
 
 The activation function commonly preferred for the output layer in neural networks for binary classification tasks is the Sigmoid function (option C).
+
 ***
 #### For a binary classification problem, which activation function is commonly used in the output layer of a neural network?
 * a) Sigmoid 
@@ -88,6 +91,7 @@ Detail: The correct answer is option 3. The bias-variance tradeoff is the balanc
 &nbsp;
 ## **Topic2: Deep Learning**
 &nbsp;
+
 ***
 #### What is batch normalization?
 Batch Normalization (BatchNorm) is a technique used in neural networks to normalize the inputs of each layer, typically applied before the activation function. It was introduced to address issues related to internal covariate shift and improve the training of deep neural networks.
@@ -178,6 +182,7 @@ Non-Robustness to Extreme Values: Batch normalization is sensitive to outliers a
 &nbsp;
 ## **Topic3: Generative Models**
 &nbsp;
+
 ***
 #### What is FID score?
 FID (Fréchet Inception Distance) is a metric used to evaluate the quality of generated images in generative models, particularly in Generative Adversarial Networks (GANs). It measures the similarity between real and generated images based on statistics derived from a pre-trained deep neural network.
