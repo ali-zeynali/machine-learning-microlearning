@@ -19,7 +19,7 @@ However, very large values of KK might lead to oversimplification, causing the m
 The choice of KK in KNN is crucial and depends on the dataset characteristics, such as the amount of noise, the complexity of the underlying relationships, and the size of the dataset. Cross-validation or other model validation techniques can help determine an optimal KK value for a specific problem. It's important to strike a balance between model bias and variance by choosing an appropriate KK value to achieve better generalization on unseen data.
 
 ***
-##### What is a drawback of the K-Nearest Neighbors (KNN) algorithm?
+#### What is a drawback of the K-Nearest Neighbors (KNN) algorithm?
 Answer options:
 * KNN is sensitive to irrelevant features.
 * KNN is computationally efficient for large datasets.
@@ -29,7 +29,7 @@ Answer options:
 The correct answer is option 1. KNN is sensitive to irrelevant features because it uses a distance-based approach to classify or predict data points. Irrelevant features can negatively impact the distance calculation, leading to incorrect classifications or predictions. This sensitivity to irrelevant features can affect the accuracy and efficiency of the KNN algorithm.
 
 ***
-##### How decision tree select the feature index to split the features into sub branches?
+#### How decision tree select the feature index to split the features into sub branches?
 Decision trees use a process called "recursive binary splitting" to determine how to split features into sub-branches. At each node of the tree, the algorithm searches for the feature and corresponding value that best divides the data into distinct groups to minimize impurity or maximize information gain. This selection process involves examining every feature and evaluating their potential to create homogeneous subgroups.
 The steps to select the feature index for splitting in a decision tree are:
 Calculate Impurity or Information Gain:
@@ -45,12 +45,10 @@ Build the Tree:
 As the process continues, the tree grows by creating additional nodes and splits based on the selected features and values, forming a hierarchical structure.
 By iteratively choosing the feature and value that optimally separates the data, decision trees learn decision rules that best fit the training data and create a predictive model that can predict the target variable for unseen data based on learned rules at each node of the tree.
 ***
-##### 
-Explain the concept of transfer learning in the context of deep neural networks.
+#### Explain the concept of transfer learning in the context of deep neural networks.
 Transfer learning involves leveraging knowledge gained while solving one problem and applying it to a different but related problem. In the context of deep learning, this technique uses pre-trained models that have learned features from large datasets and applies these learned features to new tasks. Instead of training a neural network from scratch, transfer learning allows the reuse of parts of a trained model and fine-tuning on a new dataset, thereby improving training efficiency and often resulting in better performance, especially when labeled data is limited for the new task.
 ***
-##### 
-What are the steps of fine tuning the model on transfer learning
+#### What are the steps of fine tuning the model on transfer learning
 Fine-tuning a model using transfer learning involves several steps:
 Select Pre-trained Model: Choose a pre-trained model that was previously trained on a large dataset (e.g., VGG, ResNet, Inception, etc.). The selected model should be suitable for the new task based on its architecture and the nature of the data.
 Remove Last Layers: Remove the output layers of the pre-trained model, typically including the classification layers specific to the original task. Retain the feature extraction layers, which capture general features.
@@ -61,7 +59,7 @@ Optimize Hyperparameters: Adjust hyperparameters such as learning rate, batch si
 Evaluate and Tune: Evaluate the fine-tuned model on a validation set and fine-tune further as needed. Monitor metrics like accuracy, loss, precision, and recall to ensure the model is learning effectively without overfitting.
 Test: Finally, test the fine-tuned model on a separate test dataset to evaluate its generalization performance.
 ***
-##### For neural networks dealing with binary classification tasks, which activation function is commonly preferred for the output layer?
+#### For neural networks dealing with binary classification tasks, which activation function is commonly preferred for the output layer?
 * A) ReLU (Rectified Linear Unit) 
 * B) Tanh (Hyperbolic Tangent) 
 * C) Sigmoid 
@@ -69,13 +67,14 @@ Test: Finally, test the fine-tuned model on a separate test dataset to evaluate 
 
 The activation function commonly preferred for the output layer in neural networks for binary classification tasks is the Sigmoid function (option C).
 ***
-##### For a binary classification problem, which activation function is commonly used in the output layer of a neural network?
+#### For a binary classification problem, which activation function is commonly used in the output layer of a neural network?
 * a) Sigmoid 
 * b) ReLU 
 * c) Tanh 
 * d) Softmax
+
 ***
-##### In machine learning, what does the bias-variance tradeoff refer to?
+#### In machine learning, what does the bias-variance tradeoff refer to?
 * Bias-variance tradeoff refers to the tradeoff between accuracy and precision.
 * Bias-variance tradeoff indicates the tradeoff between model complexity and interpretability.
 * Bias-variance tradeoff represents the tradeoff between underfitting and overfitting.
@@ -88,7 +87,7 @@ Detail: The correct answer is option 3. The bias-variance tradeoff is the balanc
 ## **Topic2: Deep Learning**
 
 ***
-##### What is batch normalization?
+#### What is batch normalization?
 Batch Normalization (BatchNorm) is a technique used in neural networks to normalize the inputs of each layer, typically applied before the activation function. It was introduced to address issues related to internal covariate shift and improve the training of deep neural networks.
 The primary goal of BatchNorm is to normalize the inputs to a layer by adjusting and scaling them so that they have a mean of zero and a standard deviation of one. This normalization is done per mini-batch during training.
 The core idea behind BatchNorm involves the following steps:
@@ -103,17 +102,21 @@ Improved Training Speed: BatchNorm can accelerate training by reducing internal 
 Stabilized Gradients: It helps in mitigating vanishing or exploding gradients by normalizing the inputs, which can improve the stability of the training process.
 Regularization: BatchNorm has a slight regularization effect due to the normalization process during each mini-batch.
 BatchNorm is widely used in various types of neural networks, especially deep convolutional neural networks (CNNs) and deep feedforward networks, contributing to more stable and efficient training of these models.
+
 ***
-##### What is the purpose of the activation function in a neural network?
+#### What is the purpose of the activation function in a neural network?
 To introduce non-linearity. Activation functions are used to introduce non-linearities in neural networks, allowing them to learn and model complex relationships within data. Without activation functions, a neural network would essentially be a linear regression model, unable to capture non-linear patterns in the data. Popular activation functions include ReLU, Sigmoid, and Tanh, among others. These functions introduce non-linear transformations to the network's output, enabling it to learn complex mappings between input and output.
+
 ***
-##### What is the purpose of dropout in neural networks?
+#### What is the purpose of dropout in neural networks?
 To prevent overfitting. Dropout is a regularization technique used in neural networks to prevent overfitting by randomly dropping a proportion of neurons during training. By temporarily removing neurons along with their connections, dropout forces the network to learn more robust features, reducing dependency on specific neurons and enhancing generalization to unseen data. This technique aids in preventing the network from memorizing the training data and improves its ability to generalize to new, unseen data.
+
 ***
-##### What does the term "vanishing gradients" refer to in deep learning?
+#### What does the term "vanishing gradients" refer to in deep learning?
 Gradient values approaching zero in early layers. Vanishing gradients occur when the gradients become extremely small as they propagate backward through the layers during neural network training. This issue particularly affects deep networks where the gradients shrink significantly as they move through many layers, making it difficult for earlier layers to update their weights effectively. Consequently, this hinders the learning process in those layers, leading to slower convergence or stagnation in learning.
+
 ***
-##### What are options to address vanishing gradient problem?
+#### What are options to address vanishing gradient problem?
 Options to address the vanishing gradient problem in deep learning include:
 Activation functions: Replace sigmoid or tanh activation functions with ReLU (Rectified Linear Unit) or its variants like Leaky ReLU, which help mitigate vanishing gradients by allowing non-zero gradients for positive inputs.
 Weight initialization: Use proper weight initialization techniques such as He initialization for ReLU or Xavier initialization to ensure proper scaling of weights and avoid excessively small or large weights.
@@ -122,8 +125,9 @@ Skip connections: Implement skip connections or shortcuts in the neural network 
 Gradient clipping: Limit the magnitude of gradients during training to prevent them from becoming too large or too small. This ensures that gradients remain within a reasonable range, mitigating the vanishing gradient problem.
 Recurrent Neural Networks (RNNs) with LSTM/GRU: Use specialized architectures like LSTMs (Long Short-Term Memory) or GRUs (Gated Recurrent Units) that are designed to mitigate the vanishing gradient problem in sequential data by using gating mechanisms.
 These techniques aim to address the issue of vanishing gradients by either modifying the network architecture, adjusting the weight initialization, or controlling the gradient flow during training. Employing these strategies can improve the training of deep neural networks by ensuring better gradient flow through the network's layers.
+
 ***
-##### Why CNN are good for image tasks?
+#### Why CNN are good for image tasks?
 Convolutional Neural Networks (CNNs) are particularly effective for image-related tasks due to several reasons:
 Local Connectivity: CNNs utilize local connectivity by applying convolutional filters over small areas of the input image. This allows the networks to focus on local features and spatial hierarchies, capturing patterns such as edges, textures, and shapes efficiently.
 Parameter Sharing: CNNs employ parameter sharing, meaning the same set of weights (filters) is applied across different spatial locations of the input. This dramatically reduces the number of parameters compared to fully connected networks, enabling CNNs to handle high-dimensional data like images without excessive computational requirements.
@@ -132,11 +136,13 @@ Translation Invariance: CNNs are inherently translation invariant, meaning they 
 Pooling Layers: Pooling layers (such as max pooling) help in reducing spatial dimensions, retaining the most important information while decreasing the computational load. They provide some degree of spatial invariance and help to control overfitting.
 State-of-the-Art Performance: CNNs have consistently shown state-of-the-art performance in various computer vision tasks like image classification, object detection, segmentation, and image generation, demonstrating their effectiveness in learning meaningful representations from images.
 Overall, the architecture and properties of CNNs make them well-suited for image-related tasks by efficiently extracting and learning hierarchical representations from raw pixel data, enabling them to understand and interpret visual information effectively.
+
 ***
-##### Number of parameters at each layer of dense DNN?
+#### Number of parameters at each layer of dense DNN?
 Number of parameters in the first Dense layer = Input size x Number of neurons + Number of biases
+
 ***
-##### For a neural network training process, which of the following optimizers adapts the learning rate based on the gradients' moving average and scales the learning rate differently for each parameter according to their past gradients' magnitudes?
+#### For a neural network training process, which of the following optimizers adapts the learning rate based on the gradients' moving average and scales the learning rate differently for each parameter according to their past gradients' magnitudes?
 * Stochastic Gradient Descent (SGD)
 * B) Adam
 * C) RMSprop
@@ -144,8 +150,9 @@ Number of parameters in the first Dense layer = Input size x Number of neurons +
 
 The optimizer that adapts the learning rate based on gradients' moving averages and scales the learning rate differently for each parameter according to their past gradients' magnitudes is the "C) RMSprop" optimizer.
 RMSprop, short for Root Mean Square Propagation, adjusts the learning rates for each parameter based on the magnitude of their gradients. It divides the learning rate by an exponentially decaying average of squared gradients for each parameter. This allows for adaptive learning rates, potentially improving the convergence of the optimization process.
+
 ***
-##### DNN optimizers:
+#### DNN optimizers:
 Here's an explanation outlining the differences between several optimization algorithms used in deep learning:
 Gradient Descent (GD): The standard gradient descent computes the gradient of the loss function with respect to all parameters using the entire training dataset. It then takes a step proportional to the negative of this gradient to update the parameters. It is slow and computationally expensive for large datasets.
 Stochastic Gradient Descent (SGD): SGD processes one training example at a time, computes the gradient of the loss function, and updates the parameters for each example. It's faster than GD but can have high variance in the updates.
@@ -153,8 +160,9 @@ Mini-batch Gradient Descent: This method falls between GD and SGD. It computes t
 Momentum: It helps accelerate SGD in the relevant direction and dampens oscillations. It accumulates a fraction of the past gradients to determine the direction of the update, allowing for faster convergence and overcoming local minima.
 RMSprop (Root Mean Square Propagation): RMSprop adjusts the learning rates for each parameter based on the magnitude of their gradients. It divides the learning rate by an exponentially decaying average of squared gradients for each parameter. It adapts the learning rates for different parameters and has proven effective in training neural networks.
 Adam (Adaptive Moment Estimation): Adam combines ideas from RMSprop and momentum. It maintains both a decaying average of past squared gradients (like RMSprop) and a decaying average of past gradients (like momentum). It adapts the learning rate for each parameter, often providing faster convergence.
+
 ***
-##### What is drawback of batch normalization
+#### What is drawback of batch normalization
 The drawbacks of batch normalization include:
 Batch Size Dependency: Batch normalization's performance can be influenced by batch size. For smaller batch sizes, the batch statistics may not accurately represent the entire dataset, leading to less effective normalization.
 Impact on Training Time: While batch normalization accelerates training convergence by allowing the use of higher learning rates, it might slow down training for some cases due to the additional computations required for normalization.
@@ -168,7 +176,7 @@ Non-Robustness to Extreme Values: Batch normalization is sensitive to outliers a
 ## **Topic3: Generative Models**
 
 ***
-##### What is FID score?
+#### What is FID score?
 FID (Fréchet Inception Distance) is a metric used to evaluate the quality of generated images in generative models, particularly in Generative Adversarial Networks (GANs). It measures the similarity between real and generated images based on statistics derived from a pre-trained deep neural network.
 The FID score considers two sets of images: a set of real images (typically from a dataset) and a set of generated images produced by a generative model. The metric utilizes feature representations learned by a deep convolutional neural network, usually InceptionV3 or a similar network, to extract features from both sets of images.
 The FID score is calculated using the mean and covariance of these feature representations. It measures the distance between these statistics in a feature space, quantifying how similar the distributions of features are between the real and generated images. Lower FID scores indicate better quality generated images that are more similar to real images in terms of visual quality and diversity.
@@ -176,7 +184,7 @@ FID score is widely used in assessing the performance of generative models, espe
 In summary, FID score is a quantitative metric that quantifies the similarity between real and generated images based on their feature representations learned by a deep neural network.
 
 ***
-##### What are common generative models
+#### What are common generative models
 Common generative models used in deep learning include:
 Variational Autoencoders (VAEs): VAEs are generative models that learn latent representations of data and generate new samples by decoding latent variables.
 Generative Adversarial Networks (GANs): GANs consist of two neural networks, a generator, and a discriminator, engaged in a game. The generator creates fake samples to deceive the discriminator, which tries to distinguish between real and fake data. This competition results in the generator creating realistic data.
