@@ -74,12 +74,6 @@ Test: Finally, test the fine-tuned model on a separate test dataset to evaluate 
 
 The activation function commonly preferred for the output layer in neural networks for binary classification tasks is the Sigmoid function (option C).
 
-***
-#### For a binary classification problem, which activation function is commonly used in the output layer of a neural network?
-* a) Sigmoid 
-* b) ReLU 
-* c) Tanh 
-* d) Softmax
 
 ***
 #### In machine learning, what does the bias-variance tradeoff refer to?
@@ -441,6 +435,22 @@ This helps to balance the class distribution and provides the algorithm with mor
 Boosting algorithms, like AdaBoost or XGBoost, sequentially train weak learners and give more weight to misclassified instances.
 These algorithms are adaptive and can focus on difficult-to-classify instances, potentially improving performance on the minority class.
 
+***
+
+
+***
+#### What is the impact of using ensemble models on the computational time and interpretability of machine learning models compared to using a single base model?
+
+Ensemble models, such as bagging (e.g., Random Forest) or boosting (e.g., XGBoost), typically increase computational time and reduce interpretability compared to a single base model.
+
+* Time Intensivity:
+
+Ensembles combine predictions from multiple models, which means training and inference often require significantly more resources. For example, a Random Forest may involve training hundreds of trees, and XGBoost performs multiple sequential updates. This increases both training time and inference latency.
+
+* Interpretability:
+
+A single decision tree may be easily visualized and interpreted. But once we combine many trees, as in a Random Forest or Gradient Boosted Trees, it becomes difficult to understand the decision logic. While feature importance metrics exist, the overall decision path is opaque.
+
 
 ***
 ***
@@ -593,6 +603,19 @@ X is the sample mean,
 μ is the population mean (or the hypothesized mean),
 s is the sample standard deviation,
 n is the sample size.
+
+***
+#### What are common metrics to evaluate LLMs?
+
+* Perplexity (language modeling)
+
+* Accuracy / F1 (classification or QA)
+
+* ROUGE / BLEU / METEOR (summarization, translation)
+
+* NDCG / MAP (retrieval-augmented setups)
+
+* Human Eval / GPT-4 judge (generation quality, chatbots)
 
 
 ***
